@@ -1,13 +1,12 @@
 # Your code here!!
 def sing():
-    lib = "let it be"
-    letra = ""
-    for i in range(1,5):
-        letra+= lib+",\n"             
-    letra += "whisper words of wisdom, let it be, let it be,\n"
-    for i in range(1,4):
-        letra+= lib+",\n"
-    letra += "there will be an answer, let it be"
-    return letra
+    coroa = "let it be,"
+    corob = "whisper words of wisdom, let it be, let it be,"
+    for i in range(0,4):
+        print(coroa)
+    print(corob)
+    for i in range(0,3):
+        print("let it be,")
+    print("there will be an answer, let it be")
 
-print(sing())
+sing()

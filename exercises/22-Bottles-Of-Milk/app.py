@@ -1,12 +1,22 @@
-def number_of_bottles() {
-    var ultimaParte = "1 bottle of milk on the wall, 1 bottle of milk. Take one down and pass it around, no more bottles of milk on the wall. No more bottles of milk on the wall, no more bottles of milk. Go to the store and buy some more, 99 bottles of milk on the wall"
-    for (let i = 100; i > 1; i--) {
-        if (i == 2){
-            console.log(ultimaParte);
-            break;
-        }
-        else (i <= 100 && i > 2)
-            console.log(`${i - 1} bottles of milk on the wall, ${i - 1} bottles of milk. Take one down and pass it around,`);
-    }
-}
-print(number_of_bottles())
+
+def number_of_bottles():
+    b = 99
+    for i in range(0,100):
+        if b == 2:
+            print(str(b)+" bottles of milk on the wall, "+str(b)+" bottles of milk.")
+            b = b-1
+            print("Take one down and pass it around, "+str(b)+" bottle of milk on the wall.")
+        elif b == 1:
+            print(str(b)+" bottle of milk on the wall, "+str(b)+" bottle of milk.")
+            b = b-1
+            print("Take one down and pass it around, no more bottles of milk on the wall.")
+        elif b == 0:
+            print("No more bottles of milk on the wall, no more bottles of milk.")
+            b = 99
+            print("Go to the store and buy some more, "+str(b)+" bottles of milk on the wall.")
+        else:
+            print(str(b)+" bottles of milk on the wall, "+str(b)+" bottles of milk.")
+            b = b-1
+            print("Take one down and pass it around, "+str(b)+" bottles of milk on the wall.")
+    
+number_of_bottles()
